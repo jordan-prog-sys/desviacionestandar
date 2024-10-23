@@ -14,5 +14,9 @@ class TestCalculos(unittest.TestCase):
         with self.assertRaises(NoSePuedeCalcular):
             calcular_desviacion_estandar([])
 
+    def test_desviacion_estandar_un_elemento(self):
+        self.assertEqual(calcular_desviacion_estandar([5]), 0)
+
+
 if __name__ == '__main__':
     unittest.main()
